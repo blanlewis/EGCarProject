@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* <--main heading--> */
+.heading-container {
+  background-color: #071952;
+  color: white;
+  padding: 10px;
+
+}
+
+.fix {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+/* <--main heading--> */
+
+/* <!-- ----------------------navbar------------------------------------------------------- --> */
+
+.fix {
+  position: fixed;
+  height: 149px;
+ 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+
+  background-color: #071952;
+  color: white;
+}
+
+.fix .navbar-heading {
+  margin-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0;
+
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbar-list-elements {
+  margin-right: 10px;
+}
+
+.navbar-list-elements a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.navbar-list-elements a:hover {
+  color: yellowgreen;
+  font-size: 20px;
+}
+
+
+/* <!-- ----------------------navbar------------------------------------------------------- --> */
+
+
+
+/* <---------------------------------------------slide---------------------------------------->*/
+
+.sliding {
+  margin: 0px 2px 300px 2px;
+  position: absolute;
+  top: 150px;
+
+}
+
+.d-block {
+  height: 70vh;
+  width: 70%;
+  padding: 50px;
+}
+
+/*<--------------------------------------------------slide--------------------------------------->*/
+
+/*----------------------------------------------------marquee------------------------------------->*/
+.main-marquee-div {
+  background-color: #0B666A;
+  color: white;
+  margin-top: -148px;
+  padding-top: 0px;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 18px;
+  animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+
+  0%,
+  100% {
+    color: yellow;
+  }
+
+  25% {
+    color: white;
+  }
+
+  50% {
+    color: light yellow;
+  }
+
+  75% {
+    color: orange;
+  }
+}
+
+/* <!-- ----------------------marquee------------------------------------------------------- --> */
+
+/* <!-----------------------------services-----------------------------------------------------> */
+.main-services-heading {
+  text-align: center;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container .card img {
+  max-width: 100%;
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+}
+
+
+.card-heading {
+  font-size: 18px;
+  margin: 10px 0;
+  color: red;
+  text-align: center;
+}
+
+.card-button {
+  background-color: #068086;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card-button:hover {
+  background-color: #0B666A;
+  color: lightgreen;
+  border: 1px solid black;
+}
+
+
+/* <!-----------------------------services-----------------------------------------------------> */
+
+
+/* <!-----------------------------our-clients-----------------------------------------------------> */
+
+.clients-head {
+  text-align: center;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.clients-parent-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.clients-child-div img {
+
+  width: 100%;
+
+}
+
+.clients-child-div {
+  scale: 0.5;
+  flex: 0 0 15%;
+}
+
+.clients-child-div:hover {
+  scale: 1.0;
+}
+
+/* <!-----------------------------our-clients-----------------------------------------------------> */
+
+
+
+/* <!-------------------------------------------TEAM -------------------------------------------------------> */
+.team-heading {
+  color: red;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-decoration: blink;
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+.team-desc {
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  margin-top: 0.5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: #071952;
+  font-family: Baskerville, serif;
+  font-weight: 600;
+  font-style: italic;
+  box-shadow: 25px 25px 25px 3px black;
+
+}
+
+.gridstyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-fluid .rounded-start {
+  height: 50%;
+}
+/* <!-------------------------------------------TEAM -------------------------------------------------------> */
+
+
+/*---------------------------------------------------form-----------------------------*/
+#contact {
+  margin-top: 20px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #35A29F;
+  width: 100%;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.submit-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn button:hover {
+  background-color: #0056b3;
+}
+
+/*---------------------------------------------------form-----------------------------*/
+
+/*------------------------------------modal--------------------------------------------*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 230px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  font-size: 30px;
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.modal-popup {
+  margin: auto;
+}
+
+/* The Close Button */
+#btn-close1 {
+  background-color: green;
+  width: 140px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 9px;
+  color: white;
+  font-size: 25px;
+}
+
+/*------------------------------------modal--------------------------------------------*/
+
+
+
+/*-------------------------------------footer-----------------------------------------*/
+.footer {
+  background-color: #071952;
+  height: 100%;
+}
+
+.footer-flex {
+  padding-top: 70px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot-heading {
+  float: left;
+  margin-left: 160px;
+}
+
+.foot-paragraph {
+  color: red;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/*-------------------------------------footer-----------------------------------------*/
+
+
+
+
+/* --------------------payment------------------------------------------------ */
+
+/* CSS for styling h3 elements in the card container */
+.card-container1 h3 {
+  font-size: 1.8rem;
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.card-container1 h3:hover {
+  color: #ff6600;
+}
+
+/* CSS for aligning elements within each card */
+.card-container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card1 h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: rgb(171, 42, 42);
+}
+
+.card1 p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.card1 button {
+  background-color: rgb(29, 29, 69);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  width: 80%;
+}
+
+.card1 button:hover {
+  background-color: #0056b3;
+}
+/*-----------------------------payment------------------------------------------*/
+
+/* ---------------------------------JS-POPUP----------------------------------- */
+/* CSS for the payment form */
+.payment-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  z-index: 99;
+  display: none;
+  box-shadow: 10px 10px 80px rgba(0, 0, 0, 1); 
+  
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-item {
+  flex: 1;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+/* ---------------------------------JS-POPUP----------------------------------- */
+
+
+/*---------------------------SUCCESS--------------------------*/
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.success-popup h2 {
+  font-size: 24px;
+  color: #32CD32;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* --------------------------SUCCESS-------------------------*/
+
+/*------------------------cancel------------------*/
+.cancel-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.cancel-popup h2 {
+  font-size: 24px;
+  color: #32CD32;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button1:hover{
+  background-color: unset !important;
+}
+
+/*------------------------cancel------------------*/
